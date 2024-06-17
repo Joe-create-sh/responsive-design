@@ -1,0 +1,548 @@
+*, *::before, *::after{
+
+    box-sizing: border-box;
+
+}
+
+html, body{
+
+    margin:0;
+    padding:0;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+img{
+
+    max-width:100%; 
+
+}
+
+h1, h2{
+   
+    margin:0;
+    font-family: "Oswald", sans-serif;
+}
+
+.light{
+
+    color: rgb(216, 211, 211);
+
+}
+
+
+.container{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    width:80%;
+
+}
+
+header{
+
+    background-color: #2E323F;
+    padding: 0.5em 0;
+    text-align:center;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.86rem;
+    font-weight: bold;
+
+}
+
+.row{
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+               
+}
+
+.logo{
+
+    margin-top: 0.75em;
+
+}
+
+.nav__list{
+
+    list-style: none;
+    padding:0;
+    margin:0;
+   
+}
+
+.nav__item{
+
+    margin:0.75em 0;
+
+}
+
+.link{
+
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+
+}
+
+.button{
+
+    background-color: #A59678;
+    color:white;
+    border-radius: 100px;
+    padding: 0.25em 0.75em;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.hero{
+
+   
+    background-color: #3B4050;
+    padding:4.5em 0em;
+}
+
+
+.hero__heading{
+
+    font-size: 2.59rem;
+    font-family: "Oswald", sans-serif;
+    color:#fff;
+    line-height: 1em;
+    word-break: break-word;
+    flex-shrink: 1;
+    max-width: 100%;
+
+}
+
+.hero__text{
+
+    font-size: 0.79rem;
+    margin-top: 1em;
+
+}
+
+.hero__button{
+
+    display:inline-block;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-top: 0.4em;
+
+}
+
+.highlight{
+
+     color:#A59678;
+
+}
+
+
+.first__section{
+
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(219, 214, 214);
+    text-align: center;
+    padding:4.5em 0em;
+           
+}
+
+.first__section .col{
+
+    height:100%;
+    margin-top:1em;
+   
+}
+
+.first__section h1{
+
+    font-size: 1.008rem;
+
+}
+
+.first__section p{
+
+    font-size: 0.60rem;
+
+}
+
+
+.second__section{
+
+    background-color: #fff;
+    padding:4.5em 0em;
+
+}
+
+.second__section--primary h1{
+
+    font-size: 1.21rem;
+
+}
+
+.second__section--primary p{
+
+    font-size: 0.70rem;
+
+}
+
+.second__section--sidebar h1{
+
+    font-size: 0.86rem;
+
+}
+
+
+.second__section--sidebar p{
+
+
+    font-size: 0.516rem;
+
+}
+
+
+.dark{
+
+    background-color: #3B4050;
+    color:white;
+    padding:1em 1em;
+    text-align: center;
+    font-size: 0.60em;;
+
+}
+
+.dark + .dark{
+
+    margin-top:1em;
+
+}
+
+.third__section{
+
+    background-color: #2E323F;
+    text-align: center; 
+
+}
+
+.third__section--row{
+
+    
+    padding:3em 0em;
+
+}
+
+.third__section--row h1{
+
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.75em;
+
+}
+
+.third__section--col{
+
+    width:100%;
+
+}
+
+
+.third__section--col h2{
+
+    font-size: 0.80rem;
+
+}
+
+.third__section--col p{
+
+    font-size: 0.60rem;
+
+}
+
+
+
+@media (min-width:700px){
+
+
+    .row{
+
+        flex-direction: row;
+
+    }
+
+    .second__section--row{
+
+        flex-direction: row;
+        align-items: start;
+
+    }
+
+    
+    .logo{
+
+
+        display:flex;
+        align-items: center;
+
+    }
+
+    .nav{
+
+        display:flex;
+        justify-content: flex-end;
+        width:100%;
+
+    }
+
+    .nav__list{
+
+        display:flex;
+        align-items: center;
+
+    }
+
+    .nav__item{
+
+        margin-left: 1.5em;
+
+    }
+
+    .hero__text{
+
+        align-self: end;
+        margin-left:1em;
+
+    }
+
+    .col{
+
+        height:100%;
+        margin-top: 0;
+
+    }
+
+    .col + .col{
+
+        margin-left: 1em;
+
+    }
+
+    .dark{
+
+        font-size: 0.86em;
+        margin-top:0;
+
+    }
+
+    .second__section--sidebar h1{
+
+        font-size: 1.44rem;
+
+    }
+
+
+    .second__section--sidebar p{
+
+        font-size: 0.86rem;
+
+    }
+
+    .third__section--row h1{
+       
+        font-size: 2rem;
+       
+    }
+
+    .third__section{
+
+        text-align:left;
+
+
+    }
+
+      
+    .third__section--col + .third__section--col{
+
+        margin-left:1.5em;
+    
+    }
+
+    .footer{
+
+        align-items: start;
+        gap:1.5em;
+    
+    }
+
+    
+}
+
+
+@media (min-width: 700px) and (max-width:1000px){
+
+    
+    .hero__heading{
+
+        font-size: 3rem;
+
+    }
+
+    .hero__text{
+
+        font-size: 0.805rem;
+        margin-top: 1em;
+    
+    }
+    
+   
+    .second__section--row{
+
+        display:flex;
+        flex-direction: column;
+           
+       
+    }
+
+    
+    .second__section--primary p{
+
+        margin: 1.75em 0;
+
+
+    }
+       
+    .second__section--sidebar{
+
+        display:flex;
+        margin-left: 0 !important;
+            
+    }
+
+    .second__section--sidebar h1{
+
+        font-size: 1.008rem;
+
+    }
+
+
+    .second__section--sidebar p{
+
+        font-size: 0.602rem;
+
+    }
+
+    .dark{
+
+        margin-top:0;
+        font-size: 0.60em;
+           
+    }
+
+    .dark + .dark{
+
+        margin: 0 0 0 .75em;
+        
+    }
+
+
+    .third__section--col h2{
+
+        font-size: 0.90rem;
+    
+    }
+    
+    .third__section--col p{
+    
+        font-size: 0.68rem;
+    
+    }
+   
+}
+
+
+@media (min-width:1000px){   
+    
+    .hero__heading{
+
+        font-size: 4.33rem;
+
+    }
+
+    .hero__text{
+
+        font-size: 1.15rem;
+        margin-top: 1em;
+    
+    }
+
+    .first__section h1{
+
+        font-size: 1.44rem;
+    
+    }
+    
+    .first__section p{
+    
+        font-size: 0.60rem;
+    
+    }
+
+    .second__section--primary {
+
+        flex: 2; 
+    }
+
+    .second__section--sidebar {
+
+        flex: 1;
+     
+    }
+     
+    .second__section--primary h1{
+
+        font-size: 1.73rem;
+
+    }
+
+    .second__section--primary p{
+
+        font-size: 1.009rem;
+
+    }
+
+    .second__section--sidebar h1{
+
+        font-size: 1.44rem;
+
+    }
+
+
+    .second__section--sidebar p{
+
+
+        font-size: 0.86rem;
+
+    }
+
+    .third__section--col h2{
+
+        font-size: 1.009rem;
+    
+    }
+    
+    .third__section--col p{
+    
+        font-size: 0.76rem;
+    
+    }
+ 
+
+}
+
+
+
+
+
